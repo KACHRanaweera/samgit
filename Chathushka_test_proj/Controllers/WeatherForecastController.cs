@@ -13,7 +13,7 @@ namespace Chathushka_test_proj.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -26,6 +26,7 @@ namespace Chathushka_test_proj.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+        int x=10;
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
